@@ -105,7 +105,7 @@ export default class App extends React.Component {
       if(songLoaded){
         await this.state.sound.unloadAsync();
       }
-      console.log("Loading Song");
+      console.log("Loading.....");
       await this.state.sound.loadAsync({uri: song.location},{}, false);
       console.log("Playing Song");
       await this.state.sound.playAsync();
