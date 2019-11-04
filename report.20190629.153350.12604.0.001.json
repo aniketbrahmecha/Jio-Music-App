@@ -1,0 +1,333 @@
+
+{
+  "header": {
+    "event": "Allocation failed - JavaScript heap out of memory",
+    "trigger": "FatalError",
+    "filename": "report.20190629.153350.12604.0.001.json",
+    "dumpEventTime": "2019-06-29T15:33:50Z",
+    "dumpEventTimeStamp": "1561802630307",
+    "processId": 12604,
+    "cwd": "C:\\Users\\shahv\\ReactProjects\\MusicPlayer",
+    "commandLine": [
+      "node",
+      "C:\\Users\\shahv\\AppData\\Roaming\\npm\\\\node_modules\\expo-cli\\bin\\expo.js",
+      "start"
+    ],
+    "nodejsVersion": "v12.3.1",
+    "wordSize": 64,
+    "arch": "x64",
+    "platform": "win32",
+    "componentVersions": {
+      "node": "12.3.1",
+      "v8": "7.4.288.27-node.18",
+      "uv": "1.29.1",
+      "zlib": "1.2.11",
+      "brotli": "1.0.7",
+      "ares": "1.15.0",
+      "modules": "72",
+      "nghttp2": "1.38.0",
+      "napi": "4",
+      "llhttp": "1.1.3",
+      "http_parser": "2.8.0",
+      "openssl": "1.1.1b",
+      "cldr": "35.1",
+      "icu": "64.2",
+      "tz": "2019a",
+      "unicode": "12.1"
+    },
+    "release": {
+      "name": "node",
+      "headersUrl": "https://nodejs.org/download/release/v12.3.1/node-v12.3.1-headers.tar.gz",
+      "sourceUrl": "https://nodejs.org/download/release/v12.3.1/node-v12.3.1.tar.gz",
+      "libUrl": "https://nodejs.org/download/release/v12.3.1/win-x64/node.lib"
+    },
+    "osName": "Windows_NT",
+    "osRelease": "10.0.17134",
+    "osVersion": "Windows 10 Home",
+    "osMachine": "x86_64",
+    "host": "DESKTOP-01E1GGG"
+  },
+  "javascriptStack": {
+    "message": "No stack.",
+    "stack": [
+      "Unavailable."
+    ]
+  },
+  "nativeStack": [
+    {
+      "pc": "0x00007ff6dc4254e9",
+      "symbol": "std::basic_ostream<char,std::char_traits<char> >::operator<<+9161"
+    },
+    {
+      "pc": "0x00007ff6dc428dd4",
+      "symbol": "std::basic_ostream<char,std::char_traits<char> >::operator<<+23732"
+    },
+    {
+      "pc": "0x00007ff6dc427df8",
+      "symbol": "std::basic_ostream<char,std::char_traits<char> >::operator<<+19672"
+    },
+    {
+      "pc": "0x00007ff6dc510c9b",
+      "symbol": "uv_loop_fork+48251"
+    },
+    {
+      "pc": "0x00007ff6dc848bce",
+      "symbol": "v8::internal::Parser::ReportMessageAt+206"
+    },
+    {
+      "pc": "0x00007ff6dc81cc4a",
+      "symbol": "v8::internal::wasm::StreamingDecoder::Fail+666"
+    },
+    {
+      "pc": "0x00007ff6dc8b309c",
+      "symbol": "v8::internal::Heap::CreateFillerObjectAt+2972"
+    },
+    {
+      "pc": "0x00007ff6dc8bae0f",
+      "symbol": "v8::internal::LocalEmbedderHeapTracer::NotifyV8MarkingWorklistWasEmpty+5375"
+    },
+    {
+      "pc": "0x00007ff6dc8b1483",
+      "symbol": "v8::internal::Heap::CollectGarbage+1235"
+    },
+    {
+      "pc": "0x00007ff6dc8afb84",
+      "symbol": "v8::internal::GCTracer::AddScopeSample+1316"
+    },
+    {
+      "pc": "0x00007ff6dc8f07b3",
+      "symbol": "v8::internal::Factory::NewFillerObject+67"
+    },
+    {
+      "pc": "0x00007ff6dcc176e6",
+      "symbol": "v8::internal::OptimizingCompileDispatcher::Unblock+116966"
+    },
+    {
+      "pc": "0x00007ff6dd0b2c16",
+      "symbol": "v8::internal::NativesCollection<0>::GetScriptsSource+662454"
+    }
+  ],
+  "javascriptHeap": {
+    "totalMemory": 2174038016,
+    "totalCommittedMemory": 2174038016,
+    "usedMemory": 2094027616,
+    "availableMemory": 58214960,
+    "memoryLimit": 2197815296,
+    "heapSpaces": {
+      "read_only_space": {
+        "memorySize": 524288,
+        "committedMemory": 524288,
+        "capacity": 523976,
+        "used": 31712,
+        "available": 492264
+      },
+      "new_space": {
+        "memorySize": 33554432,
+        "committedMemory": 33554432,
+        "capacity": 16767232,
+        "used": 1297192,
+        "available": 15470040
+      },
+      "old_space": {
+        "memorySize": 2116673536,
+        "committedMemory": 2116673536,
+        "capacity": 2078319616,
+        "used": 2076611472,
+        "available": 1708144
+      },
+      "code_space": {
+        "memorySize": 1736704,
+        "committedMemory": 1736704,
+        "capacity": 1367808,
+        "used": 1367808,
+        "available": 0
+      },
+      "map_space": {
+        "memorySize": 13635584,
+        "committedMemory": 13635584,
+        "capacity": 6899680,
+        "used": 6899680,
+        "available": 0
+      },
+      "large_object_space": {
+        "memorySize": 7290880,
+        "committedMemory": 7290880,
+        "capacity": 7269448,
+        "used": 7269448,
+        "available": 0
+      },
+      "code_large_object_space": {
+        "memorySize": 622592,
+        "committedMemory": 622592,
+        "capacity": 550304,
+        "used": 550304,
+        "available": 0
+      },
+      "new_large_object_space": {
+        "memorySize": 0,
+        "committedMemory": 0,
+        "capacity": 16767232,
+        "used": 0,
+        "available": 16767232
+      }
+    }
+  },
+  "resourceUsage": {
+    "userCpuSeconds": 458.718,
+    "kernelCpuSeconds": 109.14,
+    "cpuConsumptionPercent": 20.8618,
+    "maxRss": 2278264832,
+    "pageFaults": {
+      "IORequired": 3299183,
+      "IONotRequired": 0
+    },
+    "fsActivity": {
+      "reads": 67387,
+      "writes": 22
+    }
+  },
+  "libuv": [
+  ],
+  "environmentVariables": {
+    "=::": "::\\",
+    "=C:": "C:\\Users\\shahv\\ReactProjects\\MusicPlayer",
+    "ALLUSERSPROFILE": "C:\\ProgramData",
+    "ANDROID_HOME": "C:\\Users\\shahv\\AppData\\Local\\Android\\Sdk",
+    "APPDATA": "C:\\Users\\shahv\\AppData\\Roaming",
+    "CommonProgramFiles": "C:\\Program Files\\Common Files",
+    "CommonProgramFiles(x86)": "C:\\Program Files (x86)\\Common Files",
+    "CommonProgramW6432": "C:\\Program Files\\Common Files",
+    "COMPUTERNAME": "DESKTOP-01E1GGG",
+    "ComSpec": "C:\\WINDOWS\\system32\\cmd.exe",
+    "DriverData": "C:\\Windows\\System32\\Drivers\\DriverData",
+    "FREI0R_PATH": "C:\\PROGRA~2\\APOWER~1\\VIDEOC~1\\frei0r;C:\\Program Files (x86)\\Apowersoft\\Video Converter Studio\\frei0r",
+    "HOMEDRIVE": "C:",
+    "HOMEPATH": "\\Users\\shahv",
+    "JAVA_HOME": "C:\\Program Files\\Java\\jdk1.8.0_191",
+    "LOCALAPPDATA": "C:\\Users\\shahv\\AppData\\Local",
+    "LOGONSERVER": "\\\\DESKTOP-01E1GGG",
+    "NUMBER_OF_PROCESSORS": "8",
+    "OneDrive": "C:\\Users\\shahv\\OneDrive",
+    "OneDriveConsumer": "C:\\Users\\shahv\\OneDrive",
+    "OS": "Windows_NT",
+    "Path": "C:\\Program Files\\Java\\jdk-10.0.2;C:\\Program Files (x86)\\Intel\\iCLS Client\\;C:\\Program Files\\Intel\\iCLS Client\\;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files\\Intel\\WiFi\\bin\\;C:\\Program Files\\Common Files\\Intel\\WirelessCommon\\;C:\\Program Files (x86)\\Brackets\\command;C:\\Program Files (x86)\\Intel\\Intel(R) Management Engine Components\\DAL;C:\\Program Files\\Intel\\Intel(R) Management Engine Components\\DAL;C:\\Program Files (x86)\\Intel\\Intel(R) Management Engine Components\\IPT;C:\\Program Files\\Intel\\Intel(R) Management Engine Components\\IPT;C:\\WINDOWS\\System32\\OpenSSH\\;C:\\Program Files\\Git\\cmd;C:\\Program Files\\Java\\jdk-10.0.2\\bin;C:\\TDM-GCC-64\\bin;C:\\php\\;C:\\Program Files\\nodejs\\;C:\\Users\\shahv\\AppData\\Local\\Android\\Sdk\\platform-tools;C:\\Users\\shahv\\AppData\\Roaming\\npm;C:\\Program Files\\Java\\jdk1.8.0_191\\bin;C:\\Users\\shahv\\AppData\\Local\\GitHubDesktop\\bin;C:\\Users\\shahv\\AppData\\Local\\Programs\\Microsoft VS Code\\bin;C:\\Users\\shahv\\AppData\\Roaming\\npm;C:\\Program Files\\JetBrains\\WebStorm 2019.1.3\\bin;;C:\\Users\\shahv\\AppData\\Local\\Android\\Sdk\\platform-toolsC:\\Users\\shahv\\AppData\\Local\\Android\\Sdk\\platform-tools\\adb.exe;",
+    "PATHEXT": ".COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JSE;.WSF;.WSH;.MSC",
+    "PROCESSOR_ARCHITECTURE": "AMD64",
+    "PROCESSOR_IDENTIFIER": "Intel64 Family 6 Model 142 Stepping 10, GenuineIntel",
+    "PROCESSOR_LEVEL": "6",
+    "PROCESSOR_REVISION": "8e0a",
+    "ProgramData": "C:\\ProgramData",
+    "ProgramFiles": "C:\\Program Files",
+    "ProgramFiles(x86)": "C:\\Program Files (x86)",
+    "ProgramW6432": "C:\\Program Files",
+    "PROMPT": "$P$G",
+    "PSModulePath": "C:\\Program Files\\WindowsPowerShell\\Modules;C:\\WINDOWS\\system32\\WindowsPowerShell\\v1.0\\Modules",
+    "PUBLIC": "C:\\Users\\Public",
+    "PYTHONPATH": "C:\\Python 3.7",
+    "SESSIONNAME": "Console",
+    "SystemDrive": "C:",
+    "SystemRoot": "C:\\WINDOWS",
+    "TEMP": "C:\\Users\\shahv\\AppData\\Local\\Temp",
+    "TMP": "C:\\Users\\shahv\\AppData\\Local\\Temp",
+    "USERDOMAIN": "DESKTOP-01E1GGG",
+    "USERDOMAIN_ROAMINGPROFILE": "DESKTOP-01E1GGG",
+    "USERNAME": "shahv",
+    "USERPROFILE": "C:\\Users\\shahv",
+    "VIPSHOME": "\\\\?\\C:\\Users\\shahv\\AppData\\Roaming\\npm\\node_modules\\expo-cli\\node_modules\\sharp\\build\\Release",
+    "WebStorm": "C:\\Program Files\\JetBrains\\WebStorm 2019.1.3\\bin;",
+    "windir": "C:\\WINDOWS"
+  },
+  "sharedObjects": [
+    "C:\\Program Files\\nodejs\\node.exe",
+    "C:\\WINDOWS\\SYSTEM32\\ntdll.dll",
+    "C:\\Program Files\\AVAST Software\\Avast\\aswhook.dll",
+    "C:\\WINDOWS\\System32\\KERNEL32.DLL",
+    "C:\\WINDOWS\\System32\\KERNELBASE.dll",
+    "C:\\WINDOWS\\System32\\WS2_32.dll",
+    "C:\\WINDOWS\\System32\\RPCRT4.dll",
+    "C:\\WINDOWS\\System32\\ADVAPI32.dll",
+    "C:\\WINDOWS\\System32\\msvcrt.dll",
+    "C:\\WINDOWS\\System32\\sechost.dll",
+    "C:\\WINDOWS\\System32\\USER32.dll",
+    "C:\\WINDOWS\\System32\\win32u.dll",
+    "C:\\WINDOWS\\System32\\GDI32.dll",
+    "C:\\WINDOWS\\System32\\gdi32full.dll",
+    "C:\\WINDOWS\\System32\\msvcp_win.dll",
+    "C:\\WINDOWS\\System32\\ucrtbase.dll",
+    "C:\\WINDOWS\\System32\\PSAPI.DLL",
+    "C:\\WINDOWS\\System32\\CRYPT32.dll",
+    "C:\\WINDOWS\\System32\\MSASN1.dll",
+    "C:\\WINDOWS\\SYSTEM32\\dbghelp.dll",
+    "C:\\WINDOWS\\SYSTEM32\\IPHLPAPI.DLL",
+    "C:\\WINDOWS\\SYSTEM32\\USERENV.dll",
+    "C:\\WINDOWS\\System32\\profapi.dll",
+    "C:\\WINDOWS\\SYSTEM32\\bcrypt.dll",
+    "C:\\WINDOWS\\SYSTEM32\\WINMM.dll",
+    "C:\\WINDOWS\\SYSTEM32\\WINMMBASE.dll",
+    "C:\\WINDOWS\\System32\\cfgmgr32.dll",
+    "C:\\WINDOWS\\System32\\IMM32.DLL",
+    "C:\\WINDOWS\\System32\\powrprof.dll",
+    "C:\\WINDOWS\\system32\\uxtheme.dll",
+    "C:\\WINDOWS\\System32\\combase.dll",
+    "C:\\WINDOWS\\System32\\bcryptPrimitives.dll",
+    "C:\\WINDOWS\\system32\\mswsock.dll",
+    "C:\\WINDOWS\\System32\\kernel.appcore.dll",
+    "C:\\WINDOWS\\system32\\napinsp.dll",
+    "C:\\WINDOWS\\system32\\pnrpnsp.dll",
+    "C:\\WINDOWS\\system32\\NLAapi.dll",
+    "C:\\WINDOWS\\SYSTEM32\\DNSAPI.dll",
+    "C:\\WINDOWS\\System32\\NSI.dll",
+    "C:\\WINDOWS\\System32\\winrnr.dll",
+    "C:\\WINDOWS\\System32\\wshbth.dll",
+    "\\\\?\\C:\\Users\\shahv\\AppData\\Roaming\\npm\\node_modules\\expo-cli\\node_modules\\sharp\\build\\Release\\sharp.node",
+    "\\\\?\\C:\\Users\\shahv\\AppData\\Roaming\\npm\\node_modules\\expo-cli\\node_modules\\sharp\\build\\Release\\libvips-42.dll",
+    "\\\\?\\C:\\Users\\shahv\\AppData\\Roaming\\npm\\node_modules\\expo-cli\\node_modules\\sharp\\build\\Release\\libglib-2.0-0.dll",
+    "C:\\WINDOWS\\System32\\ole32.dll",
+    "C:\\WINDOWS\\System32\\SHELL32.dll",
+    "C:\\WINDOWS\\System32\\shcore.dll",
+    "C:\\WINDOWS\\System32\\windows.storage.dll",
+    "C:\\WINDOWS\\System32\\shlwapi.dll",
+    "C:\\WINDOWS\\System32\\FLTLIB.DLL",
+    "\\\\?\\C:\\Users\\shahv\\AppData\\Roaming\\npm\\node_modules\\expo-cli\\node_modules\\sharp\\build\\Release\\libvips-cpp.dll",
+    "\\\\?\\C:\\Users\\shahv\\AppData\\Roaming\\npm\\node_modules\\expo-cli\\node_modules\\sharp\\build\\Release\\libcairo-2.dll",
+    "\\\\?\\C:\\Users\\shahv\\AppData\\Roaming\\npm\\node_modules\\expo-cli\\node_modules\\sharp\\build\\Release\\libexif-12.dll",
+    "\\\\?\\C:\\Users\\shahv\\AppData\\Roaming\\npm\\node_modules\\expo-cli\\node_modules\\sharp\\build\\Release\\libexpat-1.dll",
+    "\\\\?\\C:\\Users\\shahv\\AppData\\Roaming\\npm\\node_modules\\expo-cli\\node_modules\\sharp\\build\\Release\\libfontconfig-1.dll",
+    "\\\\?\\C:\\Users\\shahv\\AppData\\Roaming\\npm\\node_modules\\expo-cli\\node_modules\\sharp\\build\\Release\\libgif-7.dll",
+    "\\\\?\\C:\\Users\\shahv\\AppData\\Roaming\\npm\\node_modules\\expo-cli\\node_modules\\sharp\\build\\Release\\libgmodule-2.0-0.dll",
+    "\\\\?\\C:\\Users\\shahv\\AppData\\Roaming\\npm\\node_modules\\expo-cli\\node_modules\\sharp\\build\\Release\\libgobject-2.0-0.dll",
+    "\\\\?\\C:\\Users\\shahv\\AppData\\Roaming\\npm\\node_modules\\expo-cli\\node_modules\\sharp\\build\\Release\\libgsf-1-114.dll",
+    "\\\\?\\C:\\Users\\shahv\\AppData\\Roaming\\npm\\node_modules\\expo-cli\\node_modules\\sharp\\build\\Release\\libintl-8.dll",
+    "\\\\?\\C:\\Users\\shahv\\AppData\\Roaming\\npm\\node_modules\\expo-cli\\node_modules\\sharp\\build\\Release\\libjpeg-62.dll",
+    "\\\\?\\C:\\Users\\shahv\\AppData\\Roaming\\npm\\node_modules\\expo-cli\\node_modules\\sharp\\build\\Release\\liblcms2-2.dll",
+    "\\\\?\\C:\\Users\\shahv\\AppData\\Roaming\\npm\\node_modules\\expo-cli\\node_modules\\sharp\\build\\Release\\liborc-0.4-0.dll",
+    "\\\\?\\C:\\Users\\shahv\\AppData\\Roaming\\npm\\node_modules\\expo-cli\\node_modules\\sharp\\build\\Release\\libpango-1.0-0.dll",
+    "\\\\?\\C:\\Users\\shahv\\AppData\\Roaming\\npm\\node_modules\\expo-cli\\node_modules\\sharp\\build\\Release\\libpangoft2-1.0-0.dll",
+    "\\\\?\\C:\\Users\\shahv\\AppData\\Roaming\\npm\\node_modules\\expo-cli\\node_modules\\sharp\\build\\Release\\libpng16-16.dll",
+    "\\\\?\\C:\\Users\\shahv\\AppData\\Roaming\\npm\\node_modules\\expo-cli\\node_modules\\sharp\\build\\Release\\librsvg-2-2.dll",
+    "\\\\?\\C:\\Users\\shahv\\AppData\\Roaming\\npm\\node_modules\\expo-cli\\node_modules\\sharp\\build\\Release\\libtiff-5.dll",
+    "\\\\?\\C:\\Users\\shahv\\AppData\\Roaming\\npm\\node_modules\\expo-cli\\node_modules\\sharp\\build\\Release\\libwebp-7.dll",
+    "\\\\?\\C:\\Users\\shahv\\AppData\\Roaming\\npm\\node_modules\\expo-cli\\node_modules\\sharp\\build\\Release\\libwebpmux-3.dll",
+    "\\\\?\\C:\\Users\\shahv\\AppData\\Roaming\\npm\\node_modules\\expo-cli\\node_modules\\sharp\\build\\Release\\libz.dll",
+    "\\\\?\\C:\\Users\\shahv\\AppData\\Roaming\\npm\\node_modules\\expo-cli\\node_modules\\sharp\\build\\Release\\libfreetype-6.dll",
+    "\\\\?\\C:\\Users\\shahv\\AppData\\Roaming\\npm\\node_modules\\expo-cli\\node_modules\\sharp\\build\\Release\\libpixman-1-0.dll",
+    "C:\\WINDOWS\\SYSTEM32\\MSIMG32.dll",
+    "\\\\?\\C:\\Users\\shahv\\AppData\\Roaming\\npm\\node_modules\\expo-cli\\node_modules\\sharp\\build\\Release\\libgcc_s_seh-1.dll",
+    "\\\\?\\C:\\Users\\shahv\\AppData\\Roaming\\npm\\node_modules\\expo-cli\\node_modules\\sharp\\build\\Release\\libffi-6.dll",
+    "\\\\?\\C:\\Users\\shahv\\AppData\\Roaming\\npm\\node_modules\\expo-cli\\node_modules\\sharp\\build\\Release\\libgio-2.0-0.dll",
+    "\\\\?\\C:\\Users\\shahv\\AppData\\Roaming\\npm\\node_modules\\expo-cli\\node_modules\\sharp\\build\\Release\\libxml2-2.dll",
+    "\\\\?\\C:\\Users\\shahv\\AppData\\Roaming\\npm\\node_modules\\expo-cli\\node_modules\\sharp\\build\\Release\\libiconv-2.dll",
+    "\\\\?\\C:\\Users\\shahv\\AppData\\Roaming\\npm\\node_modules\\expo-cli\\node_modules\\sharp\\build\\Release\\libharfbuzz-0.dll",
+    "\\\\?\\C:\\Users\\shahv\\AppData\\Roaming\\npm\\node_modules\\expo-cli\\node_modules\\sharp\\build\\Release\\libcroco-0.6-3.dll",
+    "\\\\?\\C:\\Users\\shahv\\AppData\\Roaming\\npm\\node_modules\\expo-cli\\node_modules\\sharp\\build\\Release\\libgdk_pixbuf-2.0-0.dll",
+    "\\\\?\\C:\\Users\\shahv\\AppData\\Roaming\\npm\\node_modules\\expo-cli\\node_modules\\sharp\\build\\Release\\libpangocairo-1.0-0.dll",
+    "C:\\WINDOWS\\WinSxS\\amd64_microsoft.windows.gdiplus_6595b64144ccf1df_1.1.17134.829_none_2c31982c8af433a3\\gdiplus.dll",
+    "\\\\?\\C:\\Users\\shahv\\AppData\\Roaming\\npm\\node_modules\\expo-cli\\node_modules\\sharp\\build\\Release\\libpangowin32-1.0-0.dll",
+    "C:\\WINDOWS\\SYSTEM32\\USP10.dll",
+    "C:\\WINDOWS\\SYSTEM32\\CRYPTBASE.DLL",
+    "C:\\WINDOWS\\SYSTEM32\\dhcpcsvc6.DLL",
+    "C:\\WINDOWS\\SYSTEM32\\dhcpcsvc.DLL",
+    "C:\\Windows\\System32\\rasadhlp.dll",
+    "C:\\WINDOWS\\System32\\fwpuclnt.dll"
+  ]
+}
